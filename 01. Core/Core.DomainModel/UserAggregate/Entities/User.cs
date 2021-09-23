@@ -14,7 +14,7 @@ namespace Core.DomainModel.UserAggregate.Entities
         public string Password { get; private set; }
         public DateTime CreationDate { get; private set; }
 
-        public User Create(string firstName, string lastName, string username, string password)
+        public static User Create(string firstName, string lastName, string username, string password)
         {
             return new User
             {

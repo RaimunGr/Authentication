@@ -24,7 +24,7 @@ namespace Infra.ApplicationServices.Commands.UserAggregate
 
         public async Task<UserDto> Handle(CreateUserCommand rq, CancellationToken cancellationToken)
         {
-            var user = _mapper.Map<CreateUserCommand, User>(rq); ;
+            var user = User.Create(rq.FirstName, rq.LastName, rq.Username, rq.Password);
             var dbUser = _userRepository.Create(user);
             await _unitOfWork.CommitAsync();
             var userDto = _mapper.Map<User, UserDto>(dbUser);

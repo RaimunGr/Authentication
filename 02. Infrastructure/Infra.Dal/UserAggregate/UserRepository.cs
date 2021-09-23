@@ -69,7 +69,7 @@ namespace Infra.Dal.UserAggregate
 
             if (user is null)
             {
-                throw new Exception($"There is NO user with this credentials({username})");
+                throw new Exception($"There is NO user with this credentials.");
             }
 
             return user;
