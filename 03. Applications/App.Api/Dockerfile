@@ -7,16 +7,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim AS build
 WORKDIR /src
-COPY ["03. Applications/App.Admin.Api/App.Admin.Api.csproj", "03. Applications/App.Admin.Api/"]
-RUN dotnet restore "03. Applications/App.Admin.Api/App.Admin.Api.csproj"
+COPY ["03. Applications/App.Api/App.Api.csproj", "03. Applications/App.Api/"]
+RUN dotnet restore "03. Applications/App.Api/App.Api.csproj"
 COPY . .
-WORKDIR "/src/03. Applications/App.Admin.Api"
-RUN dotnet build "App.Admin.Api.csproj" -c Release -o /app/build
+WORKDIR "/src/03. Applications/App.Api"
+RUN dotnet build "App.Api.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "App.Admin.Api.csproj" -c Release -o /app/publish
+RUN dotnet publish "App.Api.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "App.Admin.Api.dll"]
+ENTRYPOINT ["dotnet", "App.Api.dll"]
