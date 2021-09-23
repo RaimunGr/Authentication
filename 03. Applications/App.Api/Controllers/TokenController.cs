@@ -1,4 +1,4 @@
-﻿using App.Shared.Swagger.Examples;
+﻿using App.Api.Swagger.Examples;
 using App.Api.ApiResponse;
 using Infra.ApplicationServices.Commands.Token;
 using Infra.ApplicationServices.Utility;

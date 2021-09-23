@@ -1,5 +1,5 @@
 using App.Api.Attributes;
-using App.Shared.Swagger.Examples;
+using App.Api.Swagger.Examples;
 using Infra.ApplicationServices;
 using Infra.ApplicationServices.Utility;
 using Infra.Dal;

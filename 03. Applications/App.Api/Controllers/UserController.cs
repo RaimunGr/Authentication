@@ -1,5 +1,5 @@
 ﻿using App.Api.ApiResponse;
-using App.Shared.Swagger.Examples;
+using App.Api.Swagger.Examples;
 using Infra.ApplicationServices.Commands.UserAggregate;
 using Infra.ApplicationServices.Queries.UserAggregate;
 using MediatR;

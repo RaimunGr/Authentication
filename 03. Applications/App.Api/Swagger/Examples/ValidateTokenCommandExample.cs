@@ -1,7 +1,7 @@
 ﻿using Infra.ApplicationServices.Commands.Token;
 using Swashbuckle.AspNetCore.Filters;
 
-namespace App.Shared.Swagger.Examples
+namespace App.Api.Swagger.Examples
 {
     public sealed class ValidateTokenCommandExample : IExamplesProvider<ValidateTokenCommand>
     {
