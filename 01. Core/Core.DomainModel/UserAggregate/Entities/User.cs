@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Core.DomainModel.Entities
+namespace Core.DomainModel.UserAggregate.Entities
 {
     public sealed class User
     {
