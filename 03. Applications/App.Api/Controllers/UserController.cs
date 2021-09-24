@@ -3,7 +3,6 @@ using App.Api.Swagger.Examples;
 using Infra.ApplicationServices.Commands.UserAggregate;
 using Infra.ApplicationServices.Queries.UserAggregate;
 using MediatR;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Filters;
 using System;

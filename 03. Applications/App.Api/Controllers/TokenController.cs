@@ -1,5 +1,5 @@
-﻿using App.Api.Swagger.Examples;
-using App.Api.ApiResponse;
+﻿using App.Api.ApiResponse;
+using App.Api.Swagger.Examples;
 using Infra.ApplicationServices.Commands.Token;
 using Infra.ApplicationServices.Utility;
 using MediatR;
