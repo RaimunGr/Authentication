@@ -9,7 +9,7 @@ namespace App.Api.Swagger.Examples
         {
             return new ValidateTokenCommand
             {
-                Token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+                Token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjAwNjMwYTEzLWNmODEtNGZhMS04MmU2LWY2NzkwMWExNGY4YSIsInVuaXF1ZV9uYW1lIjoiRmFyc2hhZCBHb29kYXJ6aSIsInVzZXJuYW1lIjoiRXhhbXBsZVVzZXIiLCJuYmYiOjE2MzI0NDE1MTgsImV4cCI6MTYzMjQ0MzMxOCwiaWF0IjoxNjMyNDQxNTE4LCJpc3MiOiJodHRwczovL3JhaW11bi5jb20vIiwiYXVkIjoiaHR0cHM6Ly9yYWltdW4uY29tLyJ9.LvMXz82rIngzbMK4dZOud2MgU6MO_ifH_Gfuud-mOEA"
             };
         }
     }
